@@ -1,4 +1,4 @@
-# codename: Kithe - take a plung into travling.
+# Kithe - take a plung into travling.
 A travel application that were prototyped on Berg-Hansen's hackathon. Hence, the application itself is not fully developed.
 
 # Description
