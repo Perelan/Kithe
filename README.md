@@ -8,4 +8,5 @@ We divided the team into two groups, web and android developers. This repository
 
 # The team:
 Frontend: @sharu95
+
 Backend: @perelan
