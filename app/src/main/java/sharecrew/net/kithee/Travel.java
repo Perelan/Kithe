@@ -5,7 +5,7 @@ package sharecrew.net.kithee;
  */
 public class Travel {
 
-    String destination, departure, returnDate, fare, airline, carPrice;
+    private String destination, departure, returnDate, fare, airline, carPrice;
 
     public Travel(String destination, String departure, String returnDate, String fare, String airline, String carPrice) {
         this.destination = destination;
