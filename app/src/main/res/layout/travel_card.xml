@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:id="@+id/card_item"
+        card_view:cardElevation="10dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/card_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp">
+
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/card_image"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/usa"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRICE VALUE"
+                android:id="@+id/price_value"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/circle"
+                android:layout_marginBottom="5dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/departure"
+                android:src="@drawable/departure"
+                android:layout_alignTop="@+id/card_image"
+                android:layout_toEndOf="@+id/card_image"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/airline"
+                android:src="@drawable/airline"
+                android:layout_marginLeft="30dp"
+                android:layout_alignTop="@+id/icon_hotel"
+                android:layout_toStartOf="@+id/persons_desc" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/icon_hotel"
+                android:src="@drawable/location"
+                android:layout_alignTop="@+id/card_image"
+                android:layout_alignStart="@+id/departure" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/arrival"
+                android:src="@drawable/arrival"
+                android:layout_marginLeft="60dp"
+                android:layout_alignTop="@+id/departure"
+                android:layout_toEndOf="@+id/departure"
+                android:layout_marginStart="98dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/circle"
+                android:src="@drawable/circle"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/price_value"
+                android:layout_alignEnd="@+id/relativeLayout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure"
+                android:id="@+id/city_desc"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/departure"
+                android:layout_toEndOf="@+id/departure" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Airline"
+                android:id="@+id/car_desc"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/hotel_desc"
+                android:layout_toEndOf="@+id/airline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:id="@+id/hotel_desc"
+                android:layout_alignBottom="@+id/icon_hotel"
+                android:layout_alignStart="@+id/city_desc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrival"
+                android:id="@+id/persons_desc"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/city_desc"
+                android:layout_toEndOf="@+id/arrival" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/relativeLayout"
+                android:layout_below="@+id/card_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PRICE:"
+                android:id="@+id/textView"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/price_value"
+                android:layout_alignStart="@+id/card_image" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/car"
+                android:src="@drawable/car"
+                android:layout_marginLeft="30dp"
+                android:layout_alignBottom="@+id/card_image"
+                android:layout_toStartOf="@+id/arrival" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car price"
+                android:id="@+id/car_desc2"
+                android:layout_alignBottom="@+id/car"
+                android:layout_alignStart="@+id/city_desc" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
