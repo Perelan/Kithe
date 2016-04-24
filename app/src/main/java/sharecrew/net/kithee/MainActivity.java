@@ -31,22 +31,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String price = input.getText().toString();
-                //if(input.getText().toString().isEmpty()){
-                  //  Toast.makeText(v.getContext(), "An input is needed!", Toast.LENGTH_SHORT).show();
-                //}else{
-                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
 
-                    searchbar.setVisibility(View.GONE);
+                searchbar.setVisibility(View.GONE);
 
-                    Fragment fragment = TravelFragment.newInstance(price);
-                    android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
-                    android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
-                    ft.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.slide_out_right);
-                    ft.replace(R.id.fragment, fragment);
-                    ft.addToBackStack(null);
-                    ft.commit();
-                //}
+                Fragment fragment = TravelFragment.newInstance(price);
+                android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
+                android.support.v4.app.FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.fade_in, android.R.anim.fade_out, android.R.anim.slide_out_right);
+                ft.replace(R.id.fragment, fragment);
+                ft.addToBackStack(null);
+                ft.commit();
             }
         });
     }
