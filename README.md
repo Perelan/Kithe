@@ -6,6 +6,12 @@ A group five youngsters from University of Oslo decided to attend a well-spoken 
 
 We divided the team into two groups, web and android developers. This repository is just for the android development.
 
+<br>
+
+![](https://riat.io/img/portfolio/kithe-landing.png)
+![](https://riat.io/img/portfolio/kithe-loading.png)
+![](https://riat.io/img/portfolio/kithe-result.png)
+
 # The team:
 Frontend: @sharu95
 
